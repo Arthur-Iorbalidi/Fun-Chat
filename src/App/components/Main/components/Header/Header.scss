@@ -1,0 +1,54 @@
+.mainWrapper {
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1vh 2%;
+        border-radius: 15px;
+        border: 2px solid #000;
+        max-height: 55px;
+        gap: 10px;
+        background-color: #fff;
+        .textWrapper {
+            display: flex;
+            justify-content: space-between;
+            width: 55%;
+        }
+        .userName {
+            font-size: 1.5rem;
+        }
+        .appName {
+            font-size: 1.5rem;
+        }
+        .btnsWrapper {
+            display: flex;
+            gap: 5px;
+        }
+        .aboutBtn {
+            font-size: 1.5rem;
+            padding: 5px 10px;
+            border-radius: 10px;
+            background-color: #dce9ff;
+            border: 2px solid black;
+            text-align: center;
+        }
+        .logoutBtn {
+            font-size: 1.5rem;
+            padding: 5px 10px;
+            border-radius: 10px;
+            background-color: #82afff;
+            border: 2px solid black;
+            text-align: center;
+        }
+    }
+}
+
+@media(max-width: 400px) {
+    .mainWrapper {
+        .header {
+            .textWrapper {
+                flex-direction: column-reverse;
+            }
+        }
+    }
+}

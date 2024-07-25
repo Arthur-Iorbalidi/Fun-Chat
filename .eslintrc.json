@@ -1,0 +1,42 @@
+{
+    "parser": "@typescript-eslint/parser",
+    "plugins": ["prettier", "import", "@typescript-eslint"],
+    "extends": [
+        "airbnb"
+    ],
+    "parserOptions": {
+        "ecmaVersion": 2020,
+        "sourceType": "module"
+    },
+    "env": {
+        "es6": true,
+        "browser": true,
+        "node": true
+    },
+    "settings": {
+        "import/resolver": {
+            "node": {
+                "extensions": [".js", ".jsx", ".ts", ".tsx"]
+            }
+        }
+    },
+    "rules": {
+        "no-debugger": "off",
+        "no-console": 0,
+        "class-methods-use-this": "off",
+        "@typescript-eslint/no-explicit-any": "error",
+        "@typescript-eslint/no-var-requires": "off",
+        "indent": ["error", 4],
+        "no-prototype-builtins": "off",
+        "no-unused-vars": "off",
+        "max-len": "off",
+        "no-new": "off",
+        "no-shadow": "off",
+        "import/extensions": [
+            "error",
+            {
+                "ts": "never"
+            }
+        ]
+    }
+}

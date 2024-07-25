@@ -1,0 +1,21 @@
+.mainWrapper {
+    .footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1vh 2%;
+        border-radius: 15px;
+        border: 2px solid #000;
+        max-height: 55px;
+        background-color: #fff;
+        .schoolLogo {
+            height: 34px;
+        }
+        .authorName {
+            font-size: 1.5rem;
+        }
+        .appYear {
+            font-size: 1.5rem;
+        }
+    }
+}

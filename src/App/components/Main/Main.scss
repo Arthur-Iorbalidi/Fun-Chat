@@ -1,0 +1,16 @@
+.mainWrapper {
+    width: 100vw;
+    height: 100vh;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #bacfd2;
+    .container {
+        width: 95vw;
+        max-width: 1200px;
+        display: flex;
+        flex-direction: column;
+        gap: 1vw;
+    }
+}

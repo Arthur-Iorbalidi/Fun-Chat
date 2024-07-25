@@ -1,0 +1,51 @@
+.form {
+    max-width: 330px;
+    display: flex;
+    flex-direction: column;
+    .title {
+        font-size: clamp(2rem, 10vw, 4rem);
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .input {
+        width: 100%;
+        font-size: 2.5rem;
+        padding: 10px;
+        border: 1px solid #000;
+        margin-top: 20px;
+    }
+    .mistakeMessage {
+        width: 100%;
+        font-size: 2rem;
+        padding: 0 5px;
+        color: #fff;
+        line-height: 3rem;
+        background-color: #900;
+        border-radius: 0 0 5px 5px;
+    }
+    .submit {
+        font-size: 2rem;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: #82afff;
+        border: 2px solid black;
+        cursor: pointer;
+        margin-top: 40px;
+        color: #000;
+    }
+    .submit:disabled {
+        background-color: #fff;
+        cursor: auto;
+    }
+    .inputNameWrapper, .inputPasswordWrapper {
+        width: 100%;
+    }
+    .aboutBtn {
+        font-size: 2rem;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: #dce9ff;
+        border: 2px solid black;
+        margin-top: 10px;
+    }
+}

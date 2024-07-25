@@ -1,0 +1,71 @@
+.dialog {
+    .messages {
+        height: 88%;
+        padding: 2% 1%;
+        overflow-y: auto;
+        scrollbar-width: thin;
+        .greetingMessage {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+        }
+        .containerMessage  {
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            margin: 1% 0;
+            &.yours {
+                justify-content: flex-end;
+            }
+            .message {
+                width: 70%;
+                background-color: rgb(240, 240, 240);
+                padding: 1%;
+                border-radius: 10px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .messageHeader {
+                    width: 80%;
+                    padding-bottom: 2%;
+                    display: flex;
+                    justify-content: space-between;
+                    gap: 5%;
+                    flex-wrap: wrap;
+                }
+                .text {
+                    width: 100%;
+                    padding: 2%;
+                    border-radius: 10px;
+                    background-color: #fff;
+                    font-size: 1.5rem;
+                    word-wrap: break-word;
+                }
+                .messageFooter {
+                    width: 80%;
+                    display: flex;
+                    padding-top: 2%;
+                    justify-content: space-between;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 400px) {
+    .messageHeader {
+        .sender {
+            font-size: 0.9rem;
+        }
+        .time {
+            font-size: 0.9rem;
+        }
+    }
+    .messageFooter {
+        .status {
+            font-size: 0.9rem;
+        }
+    }
+}

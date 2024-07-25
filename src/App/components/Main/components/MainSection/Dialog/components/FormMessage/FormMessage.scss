@@ -1,0 +1,29 @@
+.dialog {
+    .formMessage {
+        height: 6%;
+        display: flex;
+        justify-content: space-between;
+        gap: 3%;
+        border-top: 2px solid #000;
+        padding: 0.5% 0.5% 0 0.5%;
+        .inputMessage {
+            width: 80%;
+            flex-grow: 1;
+            border-radius: 15px;
+            padding: 0 3%;
+            font-size: 1.5rem;
+        }
+        .buttonSend {
+            width: 20%;
+            min-width: 60px;
+            max-width: 100px;
+            border-radius: 15px;
+            font-size: 1.5rem;
+            background-color: #82afff;
+            &:disabled {
+                background-color: rgb(240, 240, 240);
+                cursor: auto;
+            }
+        }
+    }
+}
