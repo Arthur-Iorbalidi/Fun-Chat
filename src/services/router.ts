@@ -7,7 +7,7 @@ export type Route = {
 export default class Router {
     private routes: Record<Route['route'], Route['callback']> = {};
 
-    private baseUrl: string = '/arthur-iorbalidi-JSFE2023Q4/Fun-Chat/dist/';
+    private baseUrl: string = '/Fun-Chat/dist/';
 
     public navigateTo(url: string) {
         window.history.pushState({}, '', `${this.baseUrl}${url}`);
